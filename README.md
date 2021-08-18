@@ -10,7 +10,7 @@
             alt="NPM Version"></a>
 </p>
 
-This repository is a fork of [intoli/antd-scss-theme-plugin](https://github.com/intoli/antd-scss-theme-plugin).
+This repository is a fork of [rraty/antd-scss-theme-plugin](https://github.com/rraty/antd-scss-theme-plugin).
 
 The main changes are:
 
@@ -44,7 +44,7 @@ With it you can:
 This plugin is published as [antd-scss-theme-plugin](https://www.npmjs.com/package/@inventum/antd-scss-theme-plugin) on `npm`:
 
 ```bash
-npm install --save-dev @inventium/antd-scss-theme-plugin
+npm install --save-dev @yogesum/antd-scss-theme-plugin
 ```
 
 It extends the functionality of a `antd`, `less-loader` and `sass-loader` to accomplish its goals.
