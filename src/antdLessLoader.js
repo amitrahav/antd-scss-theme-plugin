@@ -47,6 +47,7 @@ export default function antdLessLoader(...args) {
 
 	const scssThemePath = getScssThemePath(options);
 	newLoaderContext.addDependency(scssThemePath);
+	console.log({ newLoaderContext, ...args });
 
 	return lessLoader.call(newLoaderContext, ...args);
 }

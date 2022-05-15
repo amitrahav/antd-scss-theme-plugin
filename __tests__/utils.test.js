@@ -39,7 +39,6 @@ describe('loadScssThemeAsLess', () => {
 		const variables = loadScssThemeAsLess(scssThemePath);
 		expect(variables).toEqual({
 			'@primary-color': '#f00',
-			// '@info-color': '#200',
 		});
 	});
 });

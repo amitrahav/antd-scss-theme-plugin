@@ -10,12 +10,14 @@
             alt="NPM Version"></a>
 </p>
 
-This repository is a fork of [rraty/antd-scss-theme-plugin](https://github.com/rraty/antd-scss-theme-plugin).
+This repository is a fork of [@yogesum/antd-scss-theme-plugin](https://github.com/yogesum/antd-scss-theme-plugin).
 
 The main changes are:
 
--   [sass-loader](https://github.com/webpack-contrib/sass-loader) version (8.0.2) compatibility
--   [less-loader](https://github.com/webpack-contrib/less-loader) version (6.0.0) compatibility
+-   Webpack 5 support
+-   [drat-sass](https://sass-lang.com/dart-sass) support
+-   [sass-loader](https://github.com/webpack-contrib/sass-loader) version (12.6.0) compatibility
+-   [less-loader](https://github.com/webpack-contrib/less-loader) version (12.6.0) compatibility
 -   [Webpack resolve.alias](https://webpack.js.org/configuration/resolve/#resolvealias) compatibility
 -   [less-vars-to-js](https://github.com/michaeltaranto/less-vars-to-js) moved from [scss-to-json](https://github.com/ryanbahniuk/scss-to-json), which allows for comments in SCSS files
 

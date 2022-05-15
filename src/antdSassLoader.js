@@ -40,9 +40,8 @@ export const overloadSassLoaderOptions = async (options) => {
 
 	const contents = await compileThemeVariables(scssThemePath);
 	const extraImporter = themeImporter(scssThemePath, contents);
-
 	let importer;
-	if ('importer' in options) {
+	if ('sassOptions' in options && 'importer' in options.sassOptions) {
 		if (Array.isArray(options.importer)) {
 			importer = [...options.importer, extraImporter];
 		} else {
@@ -53,7 +52,6 @@ export const overloadSassLoaderOptions = async (options) => {
 	}
 
 	newOptions.sassOptions = { importer };
-
 	return newOptions;
 };
 
@@ -77,12 +75,13 @@ export default function antdSassLoader(...args) {
 
 			const scssThemePath = getScssThemePath(options);
 			newLoaderContext.addDependency(scssThemePath);
-
-			return sassLoader.call(newLoaderContext, ...args);
+			const callerArgs = { newLoaderContext, ...args };
+			delete callerArgs.scssThemePath;
+			return sassLoader.call(callerArgs);
 		})
 		.catch((error) => {
 			// Remove unhelpful stack from error.
-			error.stack = undefined; // eslint-disable-line no-param-reassign
+			// error.stack = undefined; // eslint-disable-line no-param-reassign
 			callback(error);
 		});
 }

@@ -11,8 +11,7 @@ export const getScssThemePath = (options) => {
 
 	if (!scssThemePath) {
 		throw new Error(
-			'Path to an SCSS theme file must be specified through the scssThemePath loader option, ' +
-				"or passed to the plugin's constructor."
+			`Path to an SCSS theme file must be specified through the scssThemePath loader option or passed to the plugin's constructor. got: ${scssThemePath}`
 		);
 	}
 
