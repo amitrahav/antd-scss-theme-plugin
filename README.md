@@ -10,7 +10,7 @@
             alt="NPM Version"></a>
 </p>
 
-This repository is a fork of [@yogesum/antd-scss-theme-plugin](https://github.com/yogesum/antd-scss-theme-plugin).
+This repository is a fork of [@amitrahav/antd-scss-theme-plugin](https://github.com/amitrahav/antd-scss-theme-plugin).
 
 The main changes are:
 
@@ -46,15 +46,15 @@ With it you can:
 This plugin is published as [antd-scss-theme-plugin](https://www.npmjs.com/package/@inventum/antd-scss-theme-plugin) on `npm`:
 
 ```bash
-npm install --save-dev @yogesum/antd-scss-theme-plugin
+yarn add --D @amitrahav/antd-scss-theme-plugin
 ```
 
 It extends the functionality of a `antd`, `less-loader` and `sass-loader` to accomplish its goals.
 These are listed as `peerDependencies` in [package.json](package.json), and you can install them with:
 
 ```
-npm install --save antd
-npm install --save-dev less-loader sass-loader
+yarn add antd
+yarn add -D less-loader sass-loader
 ```
 
 ## Configuration

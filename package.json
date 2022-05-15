@@ -13,6 +13,7 @@
 		"type": "git",
 		"url": "https://github.com/amitrahav/antd-scss-theme-plugin"
 	},
+	"prepare" : "yarn build",
 	"publishConfig": {
 		"access": "public"
 	},
@@ -28,7 +29,7 @@
 		"sass-loader",
 		"styles"
 	],
-	"author": "Yogesh Choudhary <yogesum@gmail.com>",
+	"author": "Amit Rahav <amit.r.89@gmail.com>",
 	"license": "BSD-2-Clause",
 	"bugs": {
 		"url": "https://github.com/amitrahav/antd-scss-theme-plugin/issues"
